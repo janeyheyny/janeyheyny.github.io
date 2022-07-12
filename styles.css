@@ -438,7 +438,7 @@ button:hover {
 }
 
 .brunch-img {
-  width: 300px;
+  width: 210px;
   align-self: end;
   margin-right: 12%;
   margin-top: -140px;
@@ -473,6 +473,7 @@ button:hover {
 @media screen and (max-width: 750px) {
     .brunch-img {
         margin-top: 100px;
+        width:140px!important;
     }
 
     .nye {
@@ -543,7 +544,7 @@ button:hover {
 }
 
 .dress__text {
-  width: 300px;
+  max-width: 300px;
 }
 
 .guest__block2 {
@@ -566,32 +567,41 @@ button:hover {
 }
 
 @media screen and (max-width: 550px) {
+  /* .dress__text {
+    width: unset;
+  } */
 }
 
 @media screen and (max-width: 750px) {
     .plant-img {
-        width: 250px!important;
+        width: 100px!important;
     }
 
     .guests{
-        transform: translateX(0px) translateY(0px)!important;
+      transform: translateX(-42px) translateY(40px)!important;
+        /* margin-left: -375px;
+        margin-top: -152px; */
+        transform: none;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        width: 60px;
+        justify-content: flex-start;
+        width: 100%;
         height: 60px;
     }
 
     .dress{
         margin-top: 0;
+        width: 100%;
+    margin-left: 85px;
     }
 
     .guests__heading {
-        width:60px;
+        /* width:60px; */
         height: 60px;
-        transform: rotate(270deg) translateX(-119px) translateY(0px);
+        /* transform: rotate(270deg) translateX(-119px) translateY(-57px); */
         margin: 0;
-        margin-left: -59px;
+        margin-left: 0px;
+        transform: rotate(270deg) translateX(-28px) translateY(11px)!important;
     }
     
 
@@ -601,8 +611,8 @@ button:hover {
         flex-wrap: wrap;
         justify-content: center;
         gap: 45px;
-        margin-left: 60px;
-        margin-top: 175px;
+        margin-left: 0px;
+        margin-top: 190px;
     }
 
     .guest__block2 {
@@ -622,8 +632,10 @@ button:hover {
     }
 
     .line2 {
-        transform: translateX(-5px) translateY(-125px)!important;
-        height: 300px;
+        /* transform: translateX(-5px) translateY(-125px)!important; */
+        transform: translateX(-460px) translateY(-264px)!important;
+        transform: none;
+        height: 220px;
     }
 
 
@@ -631,14 +643,14 @@ button:hover {
 
 @media screen and (max-width: 650px) {
     .line2 {
-        transform: translateX(-36px) translateY(-125px)!important;
+      transform: translateX(0px) translateY(-166px)!important;
     }
 }
 
 @media screen and (max-width: 515px) {
-    .guests {
-        transform: translateX(-141px) translateY(-88px)!important;
-    }
+    /* .guests {
+      transform: translateX(-111px) translateY(-77px)!important;
+    } */
 
     .attendance__block{
         padding-left: 30px;
@@ -654,9 +666,9 @@ button:hover {
 /* ###############################  PIC ################################## */
 
 .plant-img {
-  width: 330px;
-  margin-left: 10%;
-  margin-top: -560px;
+  width: 160px;
+  margin-left: 35%;
+  margin-top: -520px;
   margin-bottom: 50px;
 }
 
@@ -695,14 +707,20 @@ button:hover {
 }
 
 @media screen and (max-width: 550px) {
+  /* .attendance {
+    margin: 0!important;
+  } */
+
 }
 
 @media screen and (max-width: 750px) {
     .attendance__block {
         display: block;
-        width: 380px;
-        margin: auto!important;
+        margin: 0!important;
         margin-top: 0px;
+        width: 100%;
+        padding-left: 0px!important;
+        padding-right: 0px!important;
     }
 
     .rsvp__heading {
@@ -727,7 +745,8 @@ button:hover {
   }
 
   .attendance {
-    width: auto;
+    margin: auto;
+    width: fit-content;
   }
   .attendance__text {
     width: 400px;
@@ -789,6 +808,21 @@ button:hover {
     .footer-list li{
         padding-bottom: 20px;
     }
+
+    .cog-input{
+      display: block!important;
+    min-width: 90%!important;
+    }
+
+    .cog-form{
+      overflow-x: scroll!important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+  html .cog-cognito .el-input__inner, html .cog-cognito .el-textarea__inner, :root:root:root:root:root .cog-cognito .el-input__inner, :root:root:root:root:root .cog-cognito .el-textarea__inner {
+    width: 90%!important;
+}
 }
 
 /* #############################Footer################################### */
