@@ -819,9 +819,9 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
   html .cog-cognito .el-input__inner, html .cog-cognito .el-textarea__inner, :root:root:root:root:root .cog-cognito .el-input__inner, :root:root:root:root:root .cog-cognito .el-textarea__inner {
-    width: 90%!important;
+    width: 85%!important;
 }
 }
 
